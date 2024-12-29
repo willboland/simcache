@@ -4,6 +4,8 @@ A simple cache for Go using generics.
 SimCache allows the creation of a thread-safe cache for any type, without the need to cast the returned value.
 The cache **clears expired items upon any retrieval operation**, such as `Get` or `Items`.
 
+This is essentially https://github.com/patrickmn/go-cache but with generics. Was made because of [go-cache #149](https://github.com/patrickmn/go-cache/pull/149).
+
 ## Installation
 Assuming that [you have Go installed](https://go.dev/doc/install):  
 `go get -u github.com/willboland/simcache`
